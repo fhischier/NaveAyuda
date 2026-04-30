@@ -81,9 +81,8 @@ def main():
     # Create main app
     main_app = SurveyApp()
     
-    # Show directly without orientation widget
-    main_app.setFixedSize(UIConfig.WINDOW_WIDTH, UIConfig.WINDOW_HEIGHT)
-    main_app.show()
+    # Launch in full screen mode
+    main_app.showFullScreen()
     
     sys.exit(app.exec())
 

@@ -105,9 +105,6 @@ class SurveyScreen(QWidget):
                 selected_button.set_correct()
             else:
                 selected_button.set_incorrect()
-                # Also show correct answer
-                correct_button = self.option_buttons[question.correct_index]
-                correct_button.set_correct()
             
             # Disable all buttons
             for button in self.option_buttons:
